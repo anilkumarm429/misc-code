@@ -7,7 +7,7 @@ variable "tools" {
 }
 
 variable "rg_name" {
-  default = "project-setup-1"
+  default = "project-1"
 }
 variable "rg_location" {
   default = "UK West"
