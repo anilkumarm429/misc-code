@@ -26,8 +26,8 @@ variable "values" {
     catalogue = {
       secret = "roboshop-dev"
       value = {
-        MONGO     = "redis-dev.apps11.shop"
-        MONGO_URL = "catalogue-dev.apps11.shop"
+        MONGO     = "true"
+        MONGO_URL = "mongodb://mongodb-dev.apps11.shop:27017/catalogue"
       }
     }
 
