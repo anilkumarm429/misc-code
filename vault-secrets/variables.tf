@@ -61,17 +61,17 @@ variable "values" {
     #   }
     # }
     #
-    # frontend = {
-    #   secret = "roboshop-dev"
-    #   value = {
-    #     catalogue_url = "http://catalogue-dev.apps11.shop:8080/"
-    #     user_url      = "http://user-dev.apps11.shop:8080/"
-    #     cart_url      = "http://cart-dev.apps11.shop:8080/"
-    #     payment_url   = "http://payment-dev.apps11.shop:8080/"
-    #     shipping_url  = "http://shipping-dev.apps11.shop:8080/"
-    #   }
-    # }
-    #
+    frontend = {
+      secret = "roboshop-dev"
+      value = {
+        catalogue_url = "http://catalogue-dev.apps11.shop:8080/"
+        user_url      = "http://user-dev.apps11.shop:8080/"
+        cart_url      = "http://cart-dev.apps11.shop:8080/"
+        payment_url   = "http://payment-dev.apps11.shop:8080/"
+        shipping_url  = "http://shipping-dev.apps11.shop:8080/"
+      }
+    }
+    
     # rabbitmq = {
     #   secret = "roboshop-dev"
     #   value = {
