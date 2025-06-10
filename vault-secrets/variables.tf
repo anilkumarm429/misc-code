@@ -1,6 +1,5 @@
 variable "token" {}
 
-
 variable "secrets" {
   default = {
     roboshop-dev = {
@@ -18,7 +17,7 @@ variable "values" {
       secret = "roboshop-dev"
       value = {
         REDIS_HOST     = "redis-dev.apps11.shop"
-        CATALOGUE_HOST = "catalogue-dev.apps11.shop"
+        CATALOGUE_HOST = "catalogue"
         CATALOGUE_PORT = 8080
       }
     }
@@ -31,7 +30,6 @@ variable "values" {
         DB_TYPE     = "mongo"
         APP_GIT_URL = "https://github.com/roboshop-devops-project-v3/catalogue"
         DB_HOST     = "mongodb-dev.apps11.shop"
-        SCHEMA_FILE = "db/master-data.js"
       }
     }
 
@@ -61,9 +59,9 @@ variable "values" {
     payment = {
       secret = "roboshop-dev"
       value = {
-        CART_HOST = "cart-dev.apps11.shop"
+        CART_HOST = "cart"
         CART_PORT = "8080"
-        USER_HOST = "user-dev.apps11.shop"
+        USER_HOST = "user"
         USER_PORT = "8080"
         AMQP_HOST = "rabbitmq-dev.apps11.shop"
         AMQP_USER = "roboshop"
@@ -79,15 +77,15 @@ variable "values" {
         cart_url      = "http://cart-dev.apps11.shop:8080/"
         payment_url   = "http://payment-dev.apps11.shop:8080/"
         shipping_url  = "http://shipping-dev.apps11.shop:8080/"
-        CATALOGUE_HOST = "catalogue-dev.apps11.shop"
+        CATALOGUE_HOST = "catalogue"
         CATALOGUE_PORT = 8080
-        USER_HOST      = "user-dev.apps11.shop"
+        USER_HOST      = "user"
         USER_PORT      = 8080
-        CART_HOST      = "cart-dev.apps11.shop"
+        CART_HOST      = "cart"
         CART_PORT      = 8080
-        SHIPPING_HOST  = "shipping-dev.apps11.shop"
+        SHIPPING_HOST  = "shipping"
         SHIPPING_PORT  = 8080
-        PAYMENT_HOST   = "payment-dev.apps11.shop"
+        PAYMENT_HOST   = "payment"
         PAYMENT_PORT   = 8080
 
       }
