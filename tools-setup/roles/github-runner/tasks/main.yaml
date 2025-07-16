@@ -14,14 +14,9 @@
     dest: /etc/systemd/system/multi-user.target.wants/docker.service
 
 - name: Start Docker
-  ansible.builtin.systemd_service:
-    name: docker
-    state: restarted
-    enabled: yes
-    daemon-reload: yes
-
-- name: Set Permissions
-  ansible.builtin.shell: chmod o+rw /var/run/docker.sock
+  ansible.builtin.shell: |
+    systemctl daemon-reload
+    systemctl restart docker
 
 - name: Get Runner Token
   ansible.builtin.shell: |
