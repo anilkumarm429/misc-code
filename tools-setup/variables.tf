@@ -6,10 +6,10 @@ variable "tools" {
     github-runner = {
       vm_size = "Standard_D2ls_v5"
     }
-    elk-stack = {
-      vm_size = "Standard_E2bds_v5"
-      spot    = true
-    }
+    # elk-stack = {
+    #   vm_size = "Standard_E2bds_v5"
+    #   spot    = true
+    # }
   }
 }
 
